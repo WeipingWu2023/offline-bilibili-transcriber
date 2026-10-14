@@ -1,8 +1,8 @@
-# 小棋
+# 小棋听记
 
 **把声音，留成文字。** Android 10+ 原生离线音频转写工具：捕获系统允许的内部播放音频，或导入自己的音视频，在手机上生成中文原文、标点版和独立编辑稿。
 
-![小棋宣传海报](docs/assets/xiaoqi-poster.png)
+![小棋听记宣传海报](docs/assets/xiaoqi-poster.png)
 
 [下载最新版本](https://github.com/WeipingWu2023/offline-bilibili-transcriber/releases/latest) · [详细使用说明](docs/APP_GUIDE.md) · [常见问题](docs/FAQ.md) · [实际验证范围](docs/OFFLINE_TEST_RESULTS.md)
 
@@ -26,7 +26,7 @@ Android **10及以上**，建议较新的64位手机。建议4GB及以上内存�
 
 | 文件 | 用途 |
 |---|---|
-| `xiaoqi-v1.0.1.apk` | 已签名的安装包，无需Android Studio |
+| `xiaoqi-tingji-v1.0.1.apk` | 已签名的安装包，无需Android Studio |
 | `sensevoice-offline-models.zip` | 默认离线模型包，保持ZIP格式，不要自己解压 |
 | `SHA256SUMS.txt` | 可选：验证下载文件完整性 |
 
@@ -38,7 +38,7 @@ GitHub自动生成的“Source code”是开发源码，**不是安装包**。AP
 
 ### 4. 导入模型
 
-打开 **小棋 → 模型 → 导入模型 ZIP**，用系统文件选择器选择下载的 `sensevoice-offline-models.zip`。等到出现模型条目。不要在导入期间退出页面；失败时查看错误，确认空间充足、文件完整，并重新下载。模型在应用私有目录保存，一次导入后反复离线使用。
+打开 **小棋听记 → 模型 → 导入模型 ZIP**，用系统文件选择器选择下载的 `sensevoice-offline-models.zip`。等到出现模型条目。不要在导入期间退出页面；失败时查看错误，确认空间充足、文件完整，并重新下载。模型在应用私有目录保存，一次导入后反复离线使用。
 
 确认成功后，Downloads内的ZIP副本可以自行删除。卸载或清除应用数据会删除已导入模型，需要重新导入。
 

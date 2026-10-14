@@ -196,7 +196,7 @@ class TranscriptionService : Service() {
         val open = PendingIntent.getActivity(this, 2, Intent(this, MainActivity::class.java), PendingIntent.FLAG_IMMUTABLE)
         val pause = PendingIntent.getService(this, 3, Intent(this, TranscriptionService::class.java).setAction(PAUSE), PendingIntent.FLAG_IMMUTABLE)
         return Notification.Builder(this, CHANNEL).setSmallIcon(android.R.drawable.ic_menu_edit)
-            .setContentTitle("小棋 · 转写 $progress%").setContentText(message).setContentIntent(open)
+            .setContentTitle("小棋听记 · 转写 $progress%").setContentText(message).setContentIntent(open)
             .setProgress(100, progress, progress == 0).setOngoing(true)
             .addAction(Notification.Action.Builder(null, "暂停", pause).build()).build()
     }

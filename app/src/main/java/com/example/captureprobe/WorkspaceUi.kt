@@ -211,7 +211,7 @@ fun LibraryPanel(preselectPath: String, onPlay: (File) -> Unit, onStopPlayback: 
             }
             }
             val body = when (mode) { "原文" -> TranscriptText.faithful(segments); "编辑稿" -> draft; else -> TranscriptText.readable(segments) }
-            TextButton(onClick = { context.getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("小棋", body)); message = "已复制 $mode" }, enabled = body.isNotEmpty()) { Text("复制当前文本") }
+            TextButton(onClick = { context.getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("小棋听记", body)); message = "已复制 $mode" }, enabled = body.isNotEmpty()) { Text("复制当前文本") }
             Row {
                 Button(onClick = { exportText(TranscriptText.export(audio.title, run.copy(edited = draft), segments, mode, false), "${audio.title}-$mode.txt") }, enabled = body.isNotEmpty()) { Text("导出 TXT") }
                 Spacer(Modifier.width(8.dp))

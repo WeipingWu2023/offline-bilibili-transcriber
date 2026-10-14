@@ -214,7 +214,7 @@ class CaptureService : Service() {
         val open = PendingIntent.getActivity(this, 0, Intent(this, MainActivity::class.java), PendingIntent.FLAG_IMMUTABLE)
         val stop = PendingIntent.getService(this, 1, Intent(this, CaptureService::class.java).setAction(STOP), PendingIntent.FLAG_IMMUTABLE)
         return Notification.Builder(this, CHANNEL).setSmallIcon(android.R.drawable.ic_btn_speak_now)
-            .setContentTitle("小棋 · 录制中").setContentText(text).setContentIntent(open)
+            .setContentTitle("小棋听记 · 录制中").setContentText(text).setContentIntent(open)
             .setOngoing(true).addAction(Notification.Action.Builder(null, "停止", stop).build()).build()
     }
 

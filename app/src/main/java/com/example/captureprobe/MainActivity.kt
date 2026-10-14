@@ -165,7 +165,7 @@ class MainActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     Column(Modifier.safeDrawingPadding().verticalScroll(rememberScrollState()).padding(16.dp),
                         verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Text("小棋", style = MaterialTheme.typography.headlineSmall)
+                        Text("小棋听记", style = MaterialTheme.typography.headlineSmall)
                         Text("内部音频录制 · 本地识别 · 本地保存", style = MaterialTheme.typography.bodyMedium)
                         Row { listOf("录音", "文稿", "模型").forEach { item -> TextButton(onClick = { tab = item }) { Text((if (tab == item) "● " else "") + item) } } }
                         if (tab == "文稿") LibraryPanel(selected, { play(it, capturable = false) }, ::releasePlayer)
