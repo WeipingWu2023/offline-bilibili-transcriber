@@ -11,7 +11,7 @@
         <package android:name="tv.danmaku.bili" />
         <package android:name="com.bilibili.app.in" />
     </queries>
-    <application android:name=".OfflineApp" android:label="离线听记" android:theme="@android:style/Theme.Material.Light.NoActionBar"
+    <application android:name=".OfflineApp" android:label="小棋" android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:dataExtractionRules="@xml/data_extraction_rules"
         android:allowBackup="false" android:allowAudioPlaybackCapture="true" android:supportsRtl="true">
         <activity android:name=".MainActivity" android:exported="true">
